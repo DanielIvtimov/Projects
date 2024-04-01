@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "95a15bdc-3a27-421a-8d96-860249408ef1",
+		"name": "Project Accommodation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33509805"
+	},
+	"item": [
+		{
+			"name": "Create Accommodation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Hotel Continental\",\r\n  \"address\": \"Bulevar Partizanski Odredi 7, Skopje\",\r\n  \"bookingPricePerDay\": 120,\r\n  \"type\": \"hotel\",\r\n  \"hasAC\": true,\r\n  \"hasPrivateParking\": true,\r\n  \"hasWifi\": true,\r\n  \"isAvailable\": true\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/createAccommodation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createAccommodation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
